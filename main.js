@@ -17,6 +17,10 @@ function adicionarLinha(){
 
     if(nomes.includes(inputNomeDoContato.value)){
         alert(`O nome ${inputNomeDoContato.value} já foi inserido na agenda!`);
+
+    } else if(numeros.includes(inputNumeroDoContato.value)){
+        alert(`O número ${inputNumeroDoContato.value} já foi inserido na agenda!`);
+        
     } else{
         nomes.push(inputNomeDoContato.value);
         numeros.push(inputNumeroDoContato.value);
@@ -34,5 +38,6 @@ function adicionarLinha(){
         inputNomeDoContato = '';
         inputNumeroDoContato = '';
     }
-}
+        
+    }
 
